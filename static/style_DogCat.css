@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(194, 222, 232);
+}
+
+.box{
+    border: 2px solid black;
+    margin: 10vh;
+    padding: 5vw;
+    width: 38vw;
+    background-color: rgb(67, 158, 172);
+    padding-top: 5px;
+}
+
+.uploadbox{
+
+    border: 1px solid rgb(28, 23, 23);
+    width: 28vw;
+    padding: 5vw;
+    padding-top: 8px;
+    background-color: rgb(238, 202, 208);
+    
+}
+
+.predictbox{
+   
+    border: 1px solid rgb(72, 22, 22);
+    width: 38vw;
+    height: 50vh;
+    position: relative;
+    margin-top: 50px;
+    background-color: rgb(243, 174, 243);
+    text-align: center;
+    
+}
+
+.box .uploadbox h2{
+    font-size: 34px;
+    text-align: center;
+    position: relative;
+    
+}
+
+
+.box .uploadbox button,input{
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 8px;
+    
+}
+
+.box h2{
+    font-size: 34px;
+    text-align: center;
+    position: relative;
+}

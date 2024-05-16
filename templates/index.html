@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Prediction</title>
+    <link rel="stylesheet" href="style_DogCat.css">
+    <link href="./static/style_DogCat.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body>
+    <div class="box">
+        <h2>🐶ME?? or 🐈ME??</h2>
+        <br>
+        <div class="uploadbox">
+            <h2>Upload an image</h2>
+            <br><br><br>
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/*">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+        <div class="predictbox">
+            {% if prediction %}
+                <h2>{{ prediction }}</h2>
+                <br><br>
+                <img src="data:image/png;base64,{{ image }}" alt="Resized Image">
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
+
